@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/transparent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/iv_fruit_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/fruit_icon"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/apple_icon" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_fruit_name"
+        style="@style/TextColorPrimaryStyle"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        tools:text="Apple" />
+
+</LinearLayout>
